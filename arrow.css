@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+.GoToTopButton {
+    display: none;  /* إخفاء الزر افتراضيًا */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: rgb(34, 141, 186);
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 150px;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* تأثير التغيير عند التكبير */
+    margin-left: 25px;
+    transform: scale(0);  /* الزر يبدأ بحجم صغير */
+}
+
+.GoToTopButton:hover i {
+    transform: translateY(3px);
+}
+
+.GoToTopButton:active {
+    transform: translateY(6px);
+}
+
+.GoToTopButton i {
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
